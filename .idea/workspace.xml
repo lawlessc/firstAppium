@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcafcb77-a47e-48ea-8891-923773a7d9f7" name="Default Changelist" comment="" />
+    <list default="true" id="fcafcb77-a47e-48ea-8891-923773a7d9f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AppiumTestOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameOfLifeAppTestBasic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AppiumTestOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AppiumTestOne.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +27,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/AppiumTestOne.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLifeAppTestBasic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+            <state relative-caret-position="232">
+              <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,11 +47,15 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/AppiumTestOne.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GameOfLifeAppTestBasic.java" />
       </list>
     </option>
   </component>
@@ -56,13 +65,13 @@
     <option name="width" value="1400" />
     <option name="height" value="729" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,14 +97,21 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="firstAppiumProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="firstAppiumProject" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552688354634" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553034444248" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -113,10 +129,10 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="AppiumTestOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GameOfLifeAppTestBasic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="firstAppiumProject" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AppiumTestOne" />
+      <option name="MAIN_CLASS_NAME" value="GameOfLifeAppTestBasic" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,7 +140,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppiumTestOne" />
+        <item itemvalue="JUnit.GameOfLifeAppTestBasic" />
       </list>
     </recent_temporary>
   </component>
@@ -142,21 +158,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppiumTestOne - 2019.03.15 at 21h 55m 53s.xml">
-      <configuration name="AppiumTestOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppiumTestOne - 2019.03.15 at 21h 57m 20s.xml">
-      <configuration name="AppiumTestOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppiumTestOne - 2019.03.15 at 21h 57m 47s.xml">
-      <configuration name="AppiumTestOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppiumTestOne - 2019.03.15 at 22h 00m 16s.xml">
-      <configuration name="AppiumTestOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AppiumTestOne - 2019.03.15 at 22h 04m 36s.xml">
-      <configuration name="AppiumTestOne" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppiumTestOne - 2019.03.15 at 22h 09m 39s.xml">
       <configuration name="AppiumTestOne" configurationId="JUnit" />
     </history-entry>
@@ -172,12 +173,27 @@
     <history-entry file="AppiumTestOne - 2019.03.15 at 22h 14m 16s.xml">
       <configuration name="AppiumTestOne" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AppiumTestOne - 2019.03.15 at 22h 19m 10s.xml">
+      <configuration name="AppiumTestOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppiumTestOne - 2019.03.15 at 22h 19m 29s.xml">
+      <configuration name="AppiumTestOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppiumTestOne - 2019.03.19 at 20h 39m 25s.xml">
+      <configuration name="AppiumTestOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppiumTestOne - 2019.03.19 at 20h 41m 15s.xml">
+      <configuration name="AppiumTestOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AppiumTestOne - 2019.03.19 at 20h 43m 53s.xml">
+      <configuration name="AppiumTestOne" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="81" width="1400" height="729" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -186,7 +202,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.05704698" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -213,10 +229,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AppiumTestOne.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameOfLifeAppTestBasic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="37" column="7" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        <state relative-caret-position="232">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

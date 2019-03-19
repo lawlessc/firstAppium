@@ -3,6 +3,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
@@ -16,7 +17,7 @@ import java.net.URL;
 /**
  * Created by Onur Baskirt on 05.04.2016.
  */
-public class AppiumTestOne {
+public class GameOfLifeAppTestBasic {
 
     private AndroidDriver driver;
     private WebDriverWait wait;
@@ -34,22 +35,27 @@ public class AppiumTestOne {
     }
 
     @Test
-    public void appiumBitBarTest() throws MalformedURLException, InterruptedException,URISyntaxException {
+    public void GameOfLifePauseAndSave() throws MalformedURLException, InterruptedException,URISyntaxException {
         setUp();
-        //Click second radio button
-        //driver.findElement(By.name("Use Testdroid Cloud")).click();
 
-        //Write SW Test Academy to the text area
-        //driver.findElement(By.className("android.widget.EditText")).sendKeys("SW Test Academy");
+        //We wait for Pause button to be visible to start
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("c.lawless.gameoflife:id/pause")));
 
-        //Hide Keyboard
-       // driver.hideKeyboard();
+        driver.tap(1, 429, 581,2);
 
-        //Click Answer Button
-       // driver.findElement(By.name("Answer")).click();
+        driver.tap(1, 581, 581,2);
 
-        //Synchronization after click and check the expected text
-      //  wait.until(ExpectedConditions.presenceOfElementLocated(By.name("You are right!")));
+
+        driver.findElement(By.id("c.lawless.gameoflife:id/pause")).click();
+
+        driver.findElement(By.id("c.lawless.gameoflife:id/save")).click();
+
+
+        driver.findElement(By.id("c.lawless.gameoflife:id/pause")).click();
+
+
+        driver.findElement(By.id("c.lawless.gameoflife:id/load")).click();
+
     }
 
     @AfterClass
