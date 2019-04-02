@@ -39,31 +39,49 @@ public class GameOfLifeAppTestBasic {
 
     @Test
     @Order(1)
-    public void GameOfLifePauseAndSave() throws MalformedURLException, InterruptedException,URISyntaxException {
+    public void SomeTaps() throws MalformedURLException, InterruptedException,URISyntaxException {
 
+        synchronized (driver)
+        {
+            driver.wait(5000);
+        }
 
         //We wait for Pause button to be visible to start
         wait.until(ExpectedConditions.elementToBeClickable(By.id("c.lawless.gameoflife:id/pause")));
-
         driver.tap(1, 429, 581,2);
-
         driver.tap(1, 581, 581,2);
 
+        //just to let things play out for a few seconds.
+        synchronized (driver)
+        {
+            driver.wait(5000);
+        }
+    }
 
+    @Test
+    @Order(2)
+    public void PauseAndSave() throws MalformedURLException, InterruptedException,URISyntaxException {
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("c.lawless.gameoflife:id/pause")));
         driver.findElement(By.id("c.lawless.gameoflife:id/pause")).click();
-
         driver.findElement(By.id("c.lawless.gameoflife:id/save")).click();
+    }
 
+    @Test
+    @Order(3)
+    public void LifeLoader() throws MalformedURLException, InterruptedException,URISyntaxException {
 
-        driver.findElement(By.id("c.lawless.gameoflife:id/pause")).click();
+        wait.until(ExpectedConditions.elementToBeClickable(By.id("c.lawless.gameoflife:id/loader")));
+        driver.findElement(By.id("c.lawless.gameoflife:id/loader")).click();
 
-
-        driver.findElement(By.id("c.lawless.gameoflife:id/load")).click();
+        synchronized (driver)
+        {
+            driver.wait(5000);
+        }
 
     }
 
     @AfterAll
-    public void teardown(){
+    public static void teardown(){
         //Teardown operation
         driver.quit();
     }
