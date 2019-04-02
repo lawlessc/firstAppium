@@ -1,6 +1,6 @@
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -16,14 +16,17 @@ import java.net.URL;
 
 /**
  * Created by Onur Baskirt on 05.04.2016.
+ * Appropriated and updated by Christopher Lawless 2019
+ *
  */
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class GameOfLifeAppTestBasic {
 
-    private AndroidDriver driver;
-    private WebDriverWait wait;
+    public static AndroidDriver driver;
+    public static WebDriverWait wait;
 
-    @BeforeClass
-    public void setUp() throws MalformedURLException {
+    @BeforeAll
+    public static void setUp() throws MalformedURLException {
         //Setup Appium
         DesiredCapabilities caps = DesiredCapabilities.android();
         caps.setCapability(MobileCapabilityType.APP, "c.lawless.gameoflife");
@@ -35,8 +38,9 @@ public class GameOfLifeAppTestBasic {
     }
 
     @Test
+    @Order(1)
     public void GameOfLifePauseAndSave() throws MalformedURLException, InterruptedException,URISyntaxException {
-        setUp();
+
 
         //We wait for Pause button to be visible to start
         wait.until(ExpectedConditions.elementToBeClickable(By.id("c.lawless.gameoflife:id/pause")));
@@ -58,7 +62,7 @@ public class GameOfLifeAppTestBasic {
 
     }
 
-    @AfterClass
+    @AfterAll
     public void teardown(){
         //Teardown operation
         driver.quit();
