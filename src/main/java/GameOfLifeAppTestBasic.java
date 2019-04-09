@@ -6,8 +6,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+;
 //import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
@@ -49,6 +48,8 @@ public class GameOfLifeAppTestBasic {
         //We wait for Pause button to be visible to start
         wait.until(ExpectedConditions.elementToBeClickable(By.id("c.lawless.gameoflife:id/pause")));
         driver.tap(1, 429, 581,2);
+        driver.
+       // driver.
         driver.tap(1, 581, 581,2);
 
         //just to let things play out for a few seconds.
