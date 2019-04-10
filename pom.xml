@@ -71,13 +71,6 @@
             <version>RELEASE</version>
         </dependency>
 
-
-        <dependency>
-            <groupId>codes.derive</groupId>
-            <artifactId>foldem</artifactId>
-            <version>RELEASE</version>
-            <type>pom</type>
-        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
