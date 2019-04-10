@@ -1,5 +1,8 @@
+import io.appium.java_client.PerformsActions;
+import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.touch.offset.PointOption;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -47,10 +50,23 @@ public class GameOfLifeAppTestBasic {
 
         //We wait for Pause button to be visible to start
         wait.until(ExpectedConditions.elementToBeClickable(By.id("c.lawless.gameoflife:id/pause")));
-        driver.tap(1, 429, 581,2);
-        driver.
+       // driver.tap(1, 429, 581,2);
+
+
+
+      TouchAction touchAction = new TouchAction(driver).press(PointOption.point(429, 581)).release();
+
+      //new TouchAction().press(PointOption.point(429, 581)).release();
+
+        driver.performTouchAction(touchAction);
+
+       // driver.tap
+
+
+
+
        // driver.
-        driver.tap(1, 581, 581,2);
+      //  driver.tap(1, 581, 581,2);
 
         //just to let things play out for a few seconds.
         synchronized (driver)
